@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloosh's Portfolio</title>
+    <meta name="description" content="Python-centric Web Developer and Cybersecurity Engineer Portfolio">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Aloosh Portfolio</div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon theme-icon" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-controls">
+                <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon theme-icon" aria-hidden="true"></i>
+                </button>
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                Python Developer
+                <span class="hero-subtitle">& Cybersecurity Engineer</span>
+            </h1>
+            
+            <p class="hero-description">
+                I'm a Python-centric Web Developer and Cybersecurity Engineer who loves automating the web and building smart, secure tools.
+            </p>
+
+            <div class="hero-buttons">
+                <button id="download-resume" class="btn btn-primary">
+                    <i class="fas fa-download btn-icon" aria-hidden="true"></i>
+                    Download Resume
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#contact')">
+                    Get In Touch
+                </button>
+            </div>
+
+            <div class="hero-status">
+                <div class="status-item">
+                    <i class="fas fa-circle status-dot green" aria-hidden="true"></i>
+                    Available for opportunities
+                </div>
+                <div class="status-item">
+                    <i class="fas fa-circle status-dot blue" aria-hidden="true"></i>
+                    Open to collaboration
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Currently studying Cybersecurity Engineering with a passion for ethical hacking and building secure-by-design systems.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-focus">
+                    <h3 class="about-subtitle"><i class="fas fa-cogs" aria-hidden="true"></i> My Core Focus</h3>
+                    <div class="focus-areas">
+                        <div class="focus-item">
+                            <i class="fas fa-cogs focus-emoji" aria-hidden="true"></i>
+                            <div>
+                                <h4>Web Automation</h4>
+                                <p>Python (requests, Selenium, BeautifulSoup, Playwright)</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <i class="fas fa-globe focus-emoji" aria-hidden="true"></i>
+                            <div>
+                                <h4>API Integration</h4>
+                                <p>Scripting workflows and connecting systems</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <i class="fas fa-brain focus-emoji" aria-hidden="true"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Writing efficient, reusable Python solutions</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <i class="fas fa-lock focus-emoji" aria-hidden="true"></i>
+                            <div>
+                                <h4>Security Testing</h4>
+                                <p>Web application penetration testing & vulnerability discovery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-build">
+                    <h3 class="about-subtitle"><i class="fas fa-code" aria-hidden="true"></i> What I Build With Python</h3>
+                    <div class="build-items">
+                        <div class="build-item">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                            <h4>Automate repetitive tasks</h4>
+                            <p>Streamlining workflows and eliminating manual processes</p>
+                        </div>
+                        <div class="build-item">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                            <h4>Scrape and process web data</h4>
+                            <p>Extracting insights from complex web structures</p>
+                        </div>
+                        <div class="build-item">
+                            <i class="fas fa-server" aria-hidden="true"></i>
+                            <h4>Build backend API scripts</h4>
+                            <p>Creating robust system integrations and communications</p>
+                        </div>
+                        <div class="build-item">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <h4>Secure systems through testing</h4>
+                            <p>Script-based security assessments and vulnerability discovery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-footer">
+                <p>
+                    🎓 While I've worked with <strong>HTML, CSS, JavaScript, PHP, and Java</strong>, 
+                    my real strength lies in using <strong class="text-blue">Python</strong> to solve complex problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of Python-powered automation tools and data solutions I've built
+                </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="automation">Automation</button>
+                <button class="filter-btn" data-category="data">Data</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="automation">
+                    <div class="project-header">
+                        <span class="project-category">Automation</span>
+                        <div class="project-status"></div>
+                    </div>
+                    <h3 class="project-title">Scrapper Package</h3>
+                    <p class="project-description">
+                        A Python package designed to facilitate the generation and management of temporary email addresses, email inbox monitoring, and various helper utilities such as random email generation, password creation, proxy handling, phone number parsing, and system MAC address validation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Selenium</span>
+                        <span class="tag">BeautifulSoup</span>
+                        <span class="tag">json</span>
+                        <span class="tag">requests</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/AliAlsayed-2004/scrapper" target="_blank" class="btn btn-dark">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-header">
+                        <span class="project-category">Data</span>
+                        <div class="project-status"></div>
+                    </div>
+                    <h3 class="project-title">Currency & Crypto Market CLI</h3>
+                    <p class="project-description">
+                        A vibrant Python-based Command Line Interface (CLI) tool to fetch, display, and generate stunning reports for currency exchange rates and cryptocurrency prices.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scraping</span>
+                        <span class="tag">Requests</span>
+                        <span class="tag">Data Processing</span>
+                        <span class="tag">json</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/AliAlsayed-2004/c_app" target="_blank" class="btn btn-dark">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation">
+                    <div class="project-header">
+                        <span class="project-category">Automation</span>
+                        <div class="project-status"></div>
+                    </div>
+                    <h3 class="project-title">Tic-Tac-Toe with Minimax Algorithm</h3>
+                    <p class="project-description">
+                        This Java-based game lets you play Tic-Tac-Toe against an unbeatable AI powered by the Minimax algorithm. Whether you're a coding enthusiast or just love a good game, this project is a fun way to explore AI decision-making!
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Problem Solving</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/AliAlsayed-2004/Minimax" target="_blank" class="btn btn-dark">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="https://github.com/AliAlsayed-2004?tab=repositories" target="_blank">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    Specialized in Python automation and web technologies with a growing toolkit of complementary skills
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Python Expertise</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Requests</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Selenium</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>BeautifulSoup</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Playwright</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Flask/FastAPI</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Web Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>PHP</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Bootstrap</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Frameworks</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Git/GitHub</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Linux/CLI</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Database Management</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Laravel</span>
+                                <span>58%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 58%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-additional">
+                <div class="certifications">
+                    <h3><i class="fas fa-certificate" aria-hidden="true"></i> Certifications & Learning</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <i class="fas fa-certificate cert-dot" aria-hidden="true"></i>
+                            <span>Python Language</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate cert-dot" aria-hidden="true"></i>
+                            <span>FrontEnd Developer</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate cert-dot" aria-hidden="true"></i>
+                            <span>Linux Professional Institute</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="focus-areas-skills">
+                    <h3><i class="fas fa-bullseye" aria-hidden="true"></i> Current Focus Areas</h3>
+                    <div class="focus-items">
+                        <div class="focus-item-skills">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <h4>Advanced Web Automation</h4>
+                            <p>Building more sophisticated automation frameworks with AI integration</p>
+                        </div>
+                        <div class="focus-item-skills">
+                            <i class="fab fa-linux" aria-hidden="true"></i>
+                            <h4>Linux System</h4>
+                            <p>Deepening my expertise in Linux systems for better automation and security</p>
+                        </div>
+                        <div class="focus-item-skills">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <h4>Data Science & Analytics</h4>
+                            <p>Exploring data analysis and machine learning applications in automation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">
+                    Ready to collaborate on automation projects or discuss cybersecurity challenges? Let's build something secure together.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon email" aria-hidden="true"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>alialasyed.business@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin contact-icon linkedin" aria-hidden="true"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>ali-alsayed-cse</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github contact-icon github" aria-hidden="true"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>AliAlsayed-2004</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h4><i class="fas fa-rocket" aria-hidden="true"></i> Available For:</h4>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Web automation and scraping projects</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Security assessments and penetration testing</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Python development consulting</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> API integration and backend development</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Cybersecurity training and workshops</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">Select project type</option>
+                                <option value="web-automation">Web Automation</option>
+                                <option value="security-assessment">Security Assessment</option>
+                                <option value="api-development">API Development</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gradient">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Aloosh Portfolio</h3>
+                    <p>Python-centric Web Developer and Cybersecurity Engineer passionate about automating the web and building secure, intelligent tools.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> alialasyed.business@gmail.com</p>
+                        <p><i class="fab fa-linkedin" aria-hidden="true"></i> ali-alsayed-cse</p>
+                        <p><i class="fab fa-github" aria-hidden="true"></i> AliAlsayed-2004</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Aloosh Portfolio. Built with HTML, CSS, and JavaScript.</p>
+                <p>Specialized in Python automation and cybersecurity solutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
