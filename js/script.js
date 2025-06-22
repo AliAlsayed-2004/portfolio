@@ -193,9 +193,16 @@ class ContactForm {
             return;
         }
 
-        // Show success message (in a real implementation, you'd send this to a server)
-        this.showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-        this.form.reset();
+        // Send email using EmailJS
+        emailjs.sendForm("service_twxfu79", "template_2emzff9", this.form)
+            .then(() => {
+                this.showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+                this.form.reset();
+            })
+            .catch((error) => {
+                console.error("EmailJS Error:", error);
+                this.showMessage(`Error: ${error.text || "Something went wrong"}`, 'error');
+            });
     }
 
     validateForm(data) {
