@@ -145,13 +145,17 @@ class ProjectFilter {
 
     filterProjects(category) {
         this.projectCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
-            
-            if (category === 'all' || cardCategory === category) {
+            if (category === 'all') {
                 card.style.display = 'block';
                 card.style.animation = 'fadeInUp 0.5s ease';
             } else {
-                card.style.display = 'none';
+                const cardCategory = card.getAttribute('data-category');
+                if (cardCategory === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
             }
         });
     }
