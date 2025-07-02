@@ -285,7 +285,7 @@ class ResumeDownloader {
 
     downloadResume() {
         const link = document.createElement('a');
-        link.href = 'assets/resume/resume.pdf'; 
+        link.href = 'assets/resume/myCV.pdf'; 
         link.download = 'Ali_Alsayed_Resume.pdf';
         document.body.appendChild(link);
         link.click();
