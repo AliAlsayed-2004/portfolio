@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aloosh — Cybersecurity &amp; Python Portfolio</title>
+  <meta name="description" content="Cybersecurity Engineering student and Python developer focused on penetration testing, tool development, and system vulnerability analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Animated star background -->
+  <div class="stars" id="stars"></div>
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">Σ</span>
+        <span class="logo-text">Aloosh</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Cybersecurity Engineering Student</span>
+        <h1>I Don't Trust<br/><span class="gradient-text">Systems</span><br/>I Analyze Them.</h1>
+        <p class="lead">Cybersecurity student and Python developer focused on penetration testing, tool development, and exploring how systems behave and where they break.</p>
+        <div class="cta-row">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbital">
+          <div class="orbit ring-1"></div>
+          <div class="orbit ring-2"></div>
+          <div class="orbit ring-3"></div>
+          <div class="avatar-wrap">
+            <img src="assets/images/avatar.png" alt="Aloosh — Cybersecurity student" />
+          </div>
+          <span class="floater f1"></span>
+          <span class="floater f2"></span>
+          <span class="floater f3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">About</span>
+        <h2>A student with a <span class="gradient-text">security-first</span> mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass about-bio reveal">
+          <p>I'm a Cybersecurity Engineering student with a strong interest in ethical hacking, systems analysis, and understanding how things work internally not just on the surface. I learn best through hands-on practice and deep technical investigation.</p>
+          <p>I develop skills in two main areas: cybersecurity (penetration testing, vulnerability analysis, attack and defense in networks and applications) and software development (Python automation and Laravel web apps). I break problems into smaller parts, study why systems behave as they do, and how they can be exploited or secured.</p>
+          <p>I learn quickly, work independently, and aim to become a professional penetration tester combining programming and security to build tools for vulnerability detection and real-world system analysis.</p>
+          <div class="stack-grid">
+            <div class="stack-item">Python</div>
+            <div class="stack-item">Laravel</div>
+            <div class="stack-item">Burp Suite</div>
+            <div class="stack-item">Nmap</div>
+            <div class="stack-item">TryHackMe</div>
+            <div class="stack-item">OSINT</div>
+            <div class="stack-item">Web Pentesting</div>
+            <div class="stack-item">MVC / CRUD</div>
+          </div>
+        </div>
+        <div class="about-sigma reveal">
+          <div class="sigma-orbit">
+            <div class="sigma-ring r1"></div>
+            <div class="sigma-ring r2"></div>
+            <div class="sigma-core">
+              A
+            </div>
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Projects from the <span class="gradient-text">lab</span>.</h2>
+      </div>
+
+      <div class="projects">
+        <!-- Project 1 -->
+        <article class="project glass reveal">
+          <div class="project-media">
+            <img src="assets/images/inventory.png" alt="Inventory System" />
+          </div>
+          <div class="project-body">
+            <h3>Inventory system</h3>
+            <p>Professional Inventory Management Desktop App A modern desktop solution for tracking stock, managing items, exporting reports, and backing up the database</p>
+            <div class="social-row">
+              <a href="https://github.com/AliAlsayed-2004/inventory_system" aria-label="GitHub" target="_blank" class="icon-btn">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (reversed) -->
+        <article class="project glass reverse reveal">
+          <div class="project-media">
+            <img src="assets/images/scrapper.png" alt="Laravel CRUD management system" />
+          </div>
+          <div class="project-body">
+            <h3>Scrapper Package</h3>
+            <p>A Python package for scraping web content with a focus on simplicity and flexibility.</p>
+            <div class="social-row">
+              <a href="https://github.com/AliAlsayed-2004/Scrapper" aria-label="GitHub" target="_blank" class="icon-btn">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project glass reveal">
+          <div class="project-media">
+            <img src="assets/images/shadowForge.png" alt="Security testing lab environment" />
+          </div>
+          <div class="project-body">
+            <h3>ShadowForge</h3>
+            <p>Modular, interactive wordlist generator intended for security researchers, red-teamers, and developers who want to quickly craft large, targeted password lists from small input seeds.</p>
+            <div class="social-row">
+              <a href="https://github.com/AliAlsayed-2004/ShadowForge" aria-label="GitHub" target="_blank" class="icon-btn">GH</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 (reversed) -->
+        <article class="project glass reverse reveal">
+          <div class="project-media">
+            <img src="assets/images/minimax.png" alt="Web application security practice" />
+          </div>
+          <div class="project-body">
+            <h3>Tic-Tac-Toe with Minimax Algorithm</h3>
+            <p>An implementation of the classic Tic-Tac-Toe game with an AI opponent using the Minimax algorithm for optimal move selection.</p>
+            <div class="social-row">
+              <a href="https://github.com/AliAlsayed-2004/Minimax" aria-label="GitHub" target="_blank" class="icon-btn">GH</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal center">
+        <h2>Skills &amp; Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass skill-card reveal">
+          <h3>Python &amp; Automation</h3>
+          <ul class="skill-list">
+            <li><div class="skill-row"><span>Python (core)</span><span>90%</span></div><div class="bar"><span style="width:90%"></span></div></li>
+            <li><div class="skill-row"><span>HTTP / Requests</span><span>88%</span></div><div class="bar"><span style="width:88%"></span></div></li>
+            <li><div class="skill-row"><span>Automation scripts</span><span>85%</span></div><div class="bar"><span style="width:85%"></span></div></li>
+            <li><div class="skill-row"><span>OSINT tooling</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></li>
+            <li><div class="skill-row"><span>Data analysis utilities</span><span>75%</span></div><div class="bar"><span style="width:75%"></span></div></li>
+          </ul>
+        </div>
+
+        <div class="glass skill-card reveal">
+          <h3>Web Development</h3>
+          <ul class="skill-list">
+            <li><div class="skill-row"><span>Laravel / MVC</span><span>75%</span></div><div class="bar"><span style="width:75%"></span></div></li>
+            <li><div class="skill-row"><span>Blade templates</span><span>78%</span></div><div class="bar"><span style="width:78%"></span></div></li>
+            <li><div class="skill-row"><span>CRUD &amp; databases</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></li>
+            <li><div class="skill-row"><span>HTML / CSS / JS</span><span>72%</span></div><div class="bar"><span style="width:72%"></span></div></li>
+          </ul>
+        </div>
+
+        <div class="glass skill-card reveal">
+          <h3>Cybersecurity</h3>
+          <ul class="skill-list">
+            <li><div class="skill-row"><span>Burp Suite</span><span>82%</span></div><div class="bar"><span style="width:82%"></span></div></li>
+            <li><div class="skill-row"><span>Nmap</span><span>78%</span></div><div class="bar"><span style="width:78%"></span></div></li>
+            <li><div class="skill-row"><span>Web app pentesting</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></li>
+            <li><div class="skill-row"><span>Network analysis</span><span>75%</span></div><div class="bar"><span style="width:75%"></span></div></li>
+            <li><div class="skill-row"><span>Linux / Git / CLI</span><span>85%</span></div><div class="bar"><span style="width:85%"></span></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills-extra">
+        <div class="glass extra-block reveal">
+          <h3>✦ Learning &amp; Practice</h3>
+          <ul class="cert-list">
+            <li><span></span>Cybersecurity Engineering (in progress)</li>
+            <li><span></span>TryHackMe &amp; hands-on labs</li>
+            <li><span></span>Python development &amp; automation</li>
+            <li><span></span>Laravel / MVC web applications</li>
+          </ul>
+        </div>
+
+        <div class="glass extra-block reveal">
+          <h3>◎ Current Focus &amp; Goals</h3>
+          <ul class="focus-list">
+            <li>
+              <div class="focus-title">◎ Penetration Testing</div>
+              <p>Web and network testing, vulnerability analysis, and practice on platforms like TryHackMe with Burp Suite and Nmap.</p>
+            </li>
+            <li>
+              <div class="focus-title">△ Security Tool Development</div>
+              <p>Combining programming and cybersecurity to build practical tools for vulnerability detection and system analysis.</p>
+            </li>
+            <li>
+              <div class="focus-title">✦ Professional Pentester Path</div>
+              <p>Contributing to real-world security projects and improving system and network security in production environments.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's work on something <span class="gradient-text">secure</span>.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass contact-info reveal">
+          <h3>Reach out</h3>
+          <p>Open to cybersecurity collaborations, internship opportunities, and projects that combine development with security research. I learn independently and respond when I can.</p>
+          <ul>
+            <li><span>Email</span> alisalsayed.business@outlook.com</li>
+            <li><span>Focus</span> Pentesting · Python · Laravel</li>
+            <li><span>Learning</span> TryHackMe · Lab environments</li>
+          </ul>
+        </div>
+
+        <form class="glass contact-form reveal" id="contactForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@email.com" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Aloosh · Cybersecurity &amp; development.</span>
+      <span class="muted">A</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
