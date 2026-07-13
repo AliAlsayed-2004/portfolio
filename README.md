@@ -75,7 +75,7 @@ To run this portfolio locally or contribute to it, follow these steps:
 
 ---
 
-## 🌈 Features in Detail
+##  Features in Detail
 
 ### 1. **Hero Section** 🦸‍♂️
 - A bold introduction showcasing my role as a Python Developer and Cybersecurity Engineer.
